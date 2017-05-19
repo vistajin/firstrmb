@@ -1,0 +1,115 @@
+<include file="./Application/Tpl/header-admin.html" />
+
+<body>
+ <div class="container" align="center" style="margin: 20px;">
+  <button class="btn btn-info" id="addbutton">
+   <span class="glyphicon glyphicon-plus"></span>添加藏品
+  </button>
+ </div>
+ </div>
+
+ <div class="table-responsive">
+  <table class="table table-striped table-hover">
+   <thead>
+    <tr>
+     <th style="text-align: center; width: 50px">序号</th>
+     <th style="text-align: center; width: 80px">在售？</th>
+     <th style="text-align: center; width: 80px">推荐？</th>
+     <th>藏品名称</th>
+     <th>更新时间</th>
+     <th>操作</th>
+    </tr>
+   </thead>
+   <volist name="list" id="vo">
+   <tr>
+    <td align="center">{$key+1}</td>
+    <td align="center"><if condition="$vo['isshow'] eq 1"> <span class="glyphicon glyphicon-ok"></span> <else />
+     &nbsp; </if></td>
+    <td align="center"><if condition="$vo['isrecommend'] eq 1"> <span class="glyphicon glyphicon-ok"></span> <else />
+     &nbsp; </if></td>
+    <td>{$vo.title}</td>
+    <td width="230px">{$vo.update_time}</td>
+    <td width="250px">
+     <button class="btn btn-info" onclick="editSellItemInput({$vo.uid})" title="编辑">
+      <span class="glyphicon glyphicon-pencil"></span>
+     </button>
+     <button class="btn btn-danger" data-toggle="modal" data-target="#myModal" onclick="deleteSellItem({$vo.uid})"
+      title="删除">
+      <span class="glyphicon glyphicon-remove"></span>
+     </button>
+     <button class="btn btn-success" onclick="upSellItem({$vo.uid}, {$vo.category_uid})" title="上移">
+      <span class="glyphicon glyphicon-arrow-up"></span>
+     </button>
+     <button class="btn btn-success" onclick="downSellItem({$vo.uid}, {$vo.category_uid})" title="下移">
+      <span class="glyphicon glyphicon-arrow-down"></span>
+     </button>
+
+    </td>
+   </tr>
+   </volist>
+  </table>
+  <div class="container" align="center" style="margin-top: 0; margin-bottom: 20px;">
+   <ul class="pagination nomargin">{$page}
+   </ul>
+  </div>
+ </div>
+
+ <!-- Modal -->
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+   <div class="modal-content">
+    <div class="modal-header">
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+     </button>
+     <h4 class="modal-title" id="myModalLabel">警告</h4>
+    </div>
+    <div class="modal-body">确定要删除该藏品吗？</div>
+    <div class="modal-footer">
+     <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+     <button type="button" class="btn btn-danger" onclick="doDeleteSellItem()">确定删除</button>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <form id="theform" method="post">
+  <input type="hidden" id="uid" name="uid"> <input type="hidden" id="category_uid" name="category_uid"
+   value="{$category_uid}">
+ </form>
+</body>
+<script>
+function submitForm(url) {
+    $("#theform").attr("action", url);
+    $("#theform").submit();
+}
+
+$("#addbutton").click(function() {
+    submitForm("__CONTROLLER__/addSellItemInput");
+});
+
+function editSellItemInput(uid) {
+    $("#uid").val(uid);
+    submitForm("__CONTROLLER__/editSellItemInput");
+}
+
+function upSellItem(uid, category_uid) {
+    $("#uid").val(uid);
+    $("#category_uid").val(category_uid);
+    submitForm("__CONTROLLER__/upSellItem");
+}
+function downSellItem(uid, category_uid) {
+    $("#uid").val(uid);
+    $("#category_uid").val(category_uid);
+    submitForm("__CONTROLLER__/downSellItem");
+}
+
+function deleteSellItem(uid) {
+    $("#uid").val(uid);
+}
+
+function doDeleteSellItem() {
+    submitForm("__CONTROLLER__/deleteSellItem")
+}
+</script>
+</html>

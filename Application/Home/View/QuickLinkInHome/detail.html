@@ -1,0 +1,35 @@
+
+<include file="./Application/Tpl/header.html" />
+
+<!-- <script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script> -->
+<!-- <script src="__PUBLIC__/js/map.js"></script> -->
+
+<body>
+ <div class="w980" id="wrap">
+
+  <div id="leftBar" class="fl">
+  <include file="./Application/Tpl/left-navi.html" />
+  <script type="text/javascript">
+			$(function() {
+				$("#hot ul li:first div").show();
+			})
+		</script>
+
+  <div id="main" class="fl">
+
+   <div id="position">
+    您的位置：<span>{$pageName}</span>
+   </div>
+   <div id="content">
+    <div id="article">{$content}
+    </div>
+   </div>
+  </div>
+  <div class="clear"></div>
+ </div>
+
+
+ <include file="./Application/Tpl/footer.html" />
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<include file="./Application/Tpl/header-admin.html" />
+<link href="__PUBLIC__/fileinput-master/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+<script src="__PUBLIC__/fileinput-master/js/fileinput.js"></script>
+
+<body>
+    <div class="container nomargin">
+        <div class="page-header">
+            <h4><strong>基本信息</strong></h4>
+        </div>
+        <form enctype="multipart/form-data" action="__CONTROLLER__/updateBasicInfo" id="updateform" method="post">
+            <input type="hidden" name="uid" value="{$basicInfo.uid}">
+            <div class="form-group">
+				<label for="name">公司名称</label> <input type="text" class="form-control" name="name" id="name"
+					value="{$basicInfo.name}" required>
+			</div>
+            <div class="form-group">
+                <label for="photo">LOGO图片 (jpg, png, gif, jpeg)</label><br>
+                <img src="__ROOT__/Uploads/{$basicInfo.logo}">
+                <input name="photo" id="photo" class="file form-control" type="file" multiple data-min-file-count="0">
+            </div>
+            <div class="form-group">
+				<label for="network_record">网络备案号</label> <input type="text" class="form-control" name="network_record" id="network_record"
+					value="{$basicInfo.network_record}">
+			</div>
+			<div class="form-group">
+				<label for="address">地址</label> <input type="text" class="form-control" name="address" id="address"
+					value="{$basicInfo.address}">
+			</div>
+			<div class="form-group">
+				<label for="postal_code">邮编</label> <input type="text" class="form-control" name="postal_code" id="postal_code"
+					value="{$basicInfo.postal_code}">
+			</div>
+			<div class="form-group">
+				<label for="copyright">版权信息</label> <input type="text" class="form-control" name="copyright" id="copyright"
+					value="{$basicInfo.copyright}">
+			</div>
+			<div class="form-group">
+				<label for="email">客服邮箱</label> <input type="text" class="form-control" name="email" id="email"
+					value="{$basicInfo.email}">
+			</div>
+			<div class="form-group">
+				<label for="phone">客服电话</label> <input type="text" class="form-control" name="phone" id="phone"
+					value="{$basicInfo.phone}">
+			</div>
+            <div align="center">
+                <button type="submit" class="btn btn-primary" id="confirmbtn">保存</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+$("#photo").fileinput({
+    'allowedFileExtensions' : ['jpg', 'png','gif', 'jpeg'],
+});
+
+$("#confirmbtn").click(function() {
+    $("#confirmform").submit();
+});
+</script>
+</html>

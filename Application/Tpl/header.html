@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1>
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<!-- 搜索信息 -->
+<meta name="description" content="{$Think.session.company_name}" />
+<meta name="author" content="{$Think.session.company_name}" />
+<meta name="keywords" CONTENT="{$Think.session.company_name}" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__PUBLIC__/images/band.jpg" rel="shortcut icon">
+
+<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.css"> -->
+<link rel="stylesheet" href="__PUBLIC__/css/style.css?v=20170515-43">
+<link rel="stylesheet" href="__PUBLIC__/css/reset.css?v=20170515-3">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="__PUBLIC__/html5shiv/html5shiv.min.js"></script>
+	<script src="__PUBLIC__/respond/respond.min.js"></script>
+<![endif]-->
+    
+
+<!-- Optional theme -->
+<!-- <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap-theme.css"> -->
+
+<!-- jquery must before bootstrap js -->
+<script src="__PUBLIC__/jquery/jquery.min.js"></script>
+<script src="__PUBLIC__/js/common.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- 手机浏览器处理 -->
+<!-- <if condition="$isMobile eq 1">	 -->
+<!-- 	<assign name="nopaddingright" value="nopaddingright"/> -->
+<!-- 	<assign name="nopaddingleft" value="nopaddingleft"/> -->
+<!-- <else/> -->
+<!-- 	<script src="__PUBLIC__/qqonline/qqonline.jss"></script> -->
+<!-- </if> -->
+
+<script src="__PUBLIC__/jquery-cxscroll/jquery.cxscroll.min.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/jquery-cxscroll/jquery.cxscroll.css">
+<title>{$Think.session.company_name}</title>
+
+</head>
+
+<body>
+ <!-- 公共头部开始 -->
+ <div class="w980">
+  <div id="top">
+      <div class="top_txt">商务馈赠、体面大方、投资收藏、保值增值</div>
+   <h1>
+    <a href="__ROOT__/Home/index" title="{$Think.session.company_name}"
+     style="background: url(__ROOT__/Uploads/{$basicInfo.logo}) no-repeat">{$Think.session.company_name}</a>
+   </h1>
+  </div>
+  <div id="nav">
+   <ul>
+    <li><a href="__ROOT__/Home/index" id="header_link1" title="首页" {$homeHover}>首页</a></li>
+    <li class="menu"><a href="__ROOT__/Home/Aboutus/aboutus/type/corpinfo" id="header_link2" title="关于我们" {$aboutUsHover}>关于我们</a>
+     <div class="menu-on about" style="display: none;">
+      <span></span><a href="__ROOT__/Home/Aboutus/aboutus/type/corpinfo" title="公司简介" class="first">&nbsp;公司简介</a><a href="__ROOT__/Home/Aboutus/aboutus/type/contact" title="联系我们"
+       class="last">&nbsp;联系我们</a>
+     </div></li>
+     <li class="menu"><a href="__ROOT__/Home/Activity/activity" id="header_link3" title="新闻动态" {$activityHover}>新闻动态</a>
+     <div class="menu-on about" style="display: none;">
+      <span></span>
+      <a href="__ROOT__/Home/Activity/activity" title="公司动态" class="first">&nbsp;公司动态</a>
+      <a href="__ROOT__/Home/Activity/activity/category/industryNews" title="行业动态" class="last">&nbsp;行业动态</a>
+     </div></li>
+<!--    <li><a href="__ROOT__/Home/Activity/activity" id="header_link3" title="公司动态" {$activityHover}>新闻动态</a></li>-->
+<!--    <li><a href="/firstrmb/bbs/upload/forum.php" id="header_link4" title="钱币论坛">钱币论坛</a></li>-->
+    <li class="menu"><a href="__ROOT__/Home/Sell/sell" id="header_link5" title="藏品出售目录" {$sellHover}>出售目录</a>
+     <div class="menu-on sale" style="display: none;">
+      <span></span>
+      <volist name="sellCategoryList" id="vo">
+       <if condition="$key eq 0">
+        <a href="__ROOT__/Home/Sell/sell/category_uid/{$vo.category_uid}" title="{$vo.text}" class="first">&nbsp;{$vo.text}</a>
+       <elseif condition="($key+1 eq count($sellCategoryList))" />
+        <a href="__ROOT__/Home/Sell/sell/category_uid/{$vo.category_uid}" title="{$vo.text}" class="last">&nbsp;{$vo.text}</a>
+       <else/>
+        <a href="__ROOT__/Home/Sell/sell/category_uid/{$vo.category_uid}" title="{$vo.text}">&nbsp;{$vo.text}</a> 
+       </if>
+      </volist>
+     </div></li>
+     <li><a href="__ROOT__/Home/BuyInfo/detail" id="header_link6" title="藏品求购" {$buyInfoHover}>藏品求购</a></li>
+     <li><a href="__ROOT__/Home/Activity/activity/category/pqgs" id="header_link7" title="票券概述" {$pqgsHover}>票券概述</a></li>
+     <li><a href="__ROOT__/Home/Activity/activity/category/zpbb" id="header_link8" title="正票版别" {$zpbbHover}>正票版别</a></li>
+     <li><a href="__ROOT__/Home/Activity/activity/category/ypbb" id="header_link9" title="样票版别" {$ypbbHover}>样票版别</a></li>
+    
+   </ul>
+  </div>
+ </div>
+ <include file="./Application/Tpl/home-slide.html" />
+ 
+ <!-- 公共头部结束 -->

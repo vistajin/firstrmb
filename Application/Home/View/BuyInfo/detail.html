@@ -1,0 +1,37 @@
+
+<include file="./Application/Tpl/header.html" />
+
+<body>
+ <div class="w980" id="wrap">
+
+  <div id="leftBar" class="fl">
+   <div id="item">
+    <h2>藏品求购</h2>
+   </div>
+   <include file="./Application/Tpl/left-navi.html" />
+   <script type="text/javascript">
+				$(function() {
+					$("#hot ul li:first div").show();
+				})
+			</script>
+
+   <div id="main" class="fl">
+
+    <div id="position">
+     您的位置：<span>藏品求购</span>
+    </div>
+    <div id="content">
+     <div id="article">
+      {$buyInfo}
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="clear"></div>
+  </div>
+
+
+  <include file="./Application/Tpl/footer.html" />
+</body>
+
+</html>

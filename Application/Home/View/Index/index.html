@@ -1,0 +1,98 @@
+ 
+<include file="./Application/Tpl/header.html" />
+ 
+<!--  <input name="header$hidUrl" type="hidden" id="header_hidUrl" value="0" /> -->
+ <!-- 内容部分开始 -->
+ <div class="w980">
+  
+  <div id="news">
+   <div id="news-t">
+    <h2>
+     公司动态
+<!--     <span>NEWS</span>-->
+    </h2>
+    <a href="__ROOT__/Home/Activity/activity">更多>></a>
+   </div>
+   <marquee id="homeAnnouncement" behavior="scroll" height="180px" onmouseout="this.start()" onmouseover="this.stop()"
+			direction="up" scrollamount="3">
+   <ul>
+    <volist name="activity" id="vo">
+     <li>
+<!--      <span>{$vo.thedate}</span>-->
+      <a href="__ROOT__/Home/Activity/detail/uid/{$vo.uid}" title="{$vo.title}">{$vo.title}</a>
+     </li>
+    </volist>
+   </ul>
+   </marquee>
+  </div>
+  
+  <div id="news2">
+   <div id="news-t2">
+    <h2>
+     行业动态
+    </h2>
+    <a href="__ROOT__/Home/Activity/activity/category/industryNews">更多>></a>
+   </div>
+   <marquee id="homeAnnouncement2" behavior="scroll" height="180px" onmouseout="this.start()" onmouseover="this.stop()"
+			direction="up" scrollamount="3">
+   <ul>
+    <volist name="industryNews" id="vo">
+     <li>
+<!--      <span>{$vo.thedate}</span>-->
+      <a href="__ROOT__/Home/Activity/detail/uid/{$vo.uid}" title="{$vo.title}">{$vo.title}</a>
+     </li>
+    </volist>
+   </ul>
+   </marquee>
+  </div>
+  
+  
+    <div id="corpBrief">
+    <div id="corpBrief-t">
+   <h2>
+     公司简介
+<!--     <span>COMPANY</span>-->
+   </h2>
+   </div>
+   <div class="box"><p></p><br><br>
+    {$corpbrief}
+<!--    <a href="__ROOT__/Home/Aboutus/aboutus/type/corpinfo" class="more"> [查看全文]</a>-->
+   </div>
+  </div>
+  
+  <div id="about">
+   <h2>
+    联系我们
+<!--    <span>CONTACT US</span>-->
+   </h2>
+   <div class="box">{$contactusSimple}
+<!--    <p>{$aboutUs}</p>-->
+<!--    <a href="__ROOT__/Home/Aboutus/aboutus/type/corpinfo" class="more"> [查看全文]</a>-->
+   </div>
+  </div>
+
+  <div id="banner">
+   <h3>求购信息</h3>
+   <p>
+   <p>
+    <font size="3">{$buyInfo["title"]}</font>
+   </p>
+   </p>
+   <a href="__ROOT__/Home/BuyInfo/detail" title="更多"> 更多>></a>
+  </div>
+ </div>
+ <!-- 内容部分结束 -->
+
+<include file="./Application/Tpl/footer.html" />
+
+ <style>
+.right {
+	margin-left: 695px;
+	position: absolute
+}
+</style>
+ <!-- 	<SCRIPT LANGUAGE="JavaScript" > -->
+ <!-- document.writeln("<a href='https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=dov73ne26zbqpz06h12uvi9nv46w1z06c9'><img  class='right' src='/images/icon.gif' border=0></a>")</SCRIPT> -->
+ </form>
+</body>
+</html>

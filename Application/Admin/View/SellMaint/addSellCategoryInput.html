@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<include file="./Application/Tpl/header-admin.html" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h3>添加目录</h3>
+		</div>
+		<form action="{:U('Admin/SellMaint/addSellCategory')}" method="post">
+			<div class="form-group">
+				<label for="text">目录名称</label> <input type="text" class="form-control" name="text" id="text"
+					placeholder="请输入目录名称" required>
+			</div>
+			<div align="center">
+				<button class="btn btn-success" type="submit" id="save" value="submit">提交</button>
+				<button type="button" class="btn btn-default" id="backbtn">取消</button>
+				<BR />
+				<BR />
+				<BR />
+			</div>
+			<input type="hidden" name="category" value="{$category}">
+		</form>
+	</div>
+
+	<form id="form" action="__CONTROLLER__/sellCategoryList" method="post"></form>
+</body>
+<script>
+$("#backbtn").click(function() {
+    $("#form").submit();
+});
+
+</script>
+</html>

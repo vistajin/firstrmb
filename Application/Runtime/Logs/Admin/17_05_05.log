@@ -1,0 +1,135 @@
+[ 2017-05-05T07:46:34+08:00 ] ::1 /firstrmb/index.php/Admin/Index/activity/activity.html
+ERR: 非法操作:activity
+
+[ 2017-05-05T07:46:46+08:00 ] ::1 /firstrmb/index.php/Admin/Index/sellList/activity.html
+ERR: 非法操作:sellList
+
+[ 2017-05-05T07:47:01+08:00 ] ::1 /firstrmb/index.php/Admin/Index/buyInfo/activity.html
+ERR: 非法操作:buyInfo
+
+[ 2017-05-05T07:47:12+08:00 ] ::1 /firstrmb/Admin/HomeMaint/friendLinkList
+ERR: 非法操作:friendLinkList
+
+[ 2017-05-05T07:54:07+08:00 ] ::1 /firstrmb/Admin/HomeMaint/friendLinkList
+ERR: 非法操作:friendLinkList
+
+[ 2017-05-05T07:54:08+08:00 ] ::1 /firstrmb/Admin/HomeMaint/friendLinkList
+ERR: 非法操作:friendLinkList
+
+[ 2017-05-05T07:54:47+08:00 ] ::1 /firstrmb/Admin/HomeMaint/friendLinkList
+ERR: 参数错误或者未定义:category
+
+[ 2017-05-05T07:54:52+08:00 ] ::1 /firstrmb/Admin/HomeMaint/friendLinkList
+ERR: 参数错误或者未定义:category
+
+[ 2017-05-05T07:55:10+08:00 ] ::1 /firstrmb/index.php/Admin/HomeMaint/createRichTextInput/category/
+ERR: 非法操作:createRichTextInput
+
+[ 2017-05-05T07:57:58+08:00 ] ::1 /firstrmb/index.php/Admin/HomeMaint/addFriendLinkInput
+ERR: 非法操作:addFriendLinkInput
+
+[ 2017-05-05T07:59:04+08:00 ] ::1 /firstrmb/index.php/Admin/HomeMaint/addFriendLinkInput
+ERR: 模板不存在:./Application/Admin/View/HomeMaint/addFriendLinkInput.html
+
+[ 2017-05-05T08:03:06+08:00 ] ::1 /firstrmb/index.php/Admin/HomeMaint/getList/category/
+ERR: 非法操作:getList
+
+[ 2017-05-05T08:03:45+08:00 ] ::1 /firstrmb/index.php/Admin/HomeMaint/HomeMaint/friendLinkList
+ERR: 非法操作:HomeMaint
+
+[ 2017-05-05T08:04:12+08:00 ] ::1 /firstrmb/index.php/Admin/HomeMaint/addFriendLink.html
+ERR: 非法操作:addFriendLink
+
+[ 2017-05-05T08:07:00+08:00 ] ::1 /firstrmb/index.php/Admin/HomeMaint/freindLinkList.html
+ERR: 非法操作:freindLinkList
+
+[ 2017-05-05T08:08:18+08:00 ] ::1 /firstrmb/index.php/Admin/HomeMaint/deleteFriendLink
+ERR: 非法操作:deleteFriendLink
+
+[ 2017-05-05T08:26:20+08:00 ] ::1 /firstrmb/index.php/Admin/RichEdit/updateRichText.html
+ERR: 参数错误或者未定义:title
+
+[ 2017-05-05T08:27:48+08:00 ] ::1 /firstrmb/index.php/Admin/HomeMaint/updateFriendLink.html
+ERR: 非法操作:updateFriendLink
+
+[ 2017-05-05T08:30:00+08:00 ] ::1 /firstrmb/index.php/Admin/HomeMaint/deleteFriendLink
+ERR: 非法操作:deleteFriendLink
+
+[ 2017-05-05T08:30:50+08:00 ] ::1 /firstrmb/index.php/Admin/HomeMaint/deleteFriendLink
+ERR: 非法操作:deleteFriendLink
+
+[ 2017-05-05T08:32:01+08:00 ] ::1 /firstrmb/index.php/Admin/HomeMaint/upFriendLink
+ERR: 非法操作:upFriendLink
+
+[ 2017-05-05T08:49:47+08:00 ] ::1 /firstrmb/Admin/User/userList
+ERR: 无法加载控制器:User
+
+[ 2017-05-05T08:50:59+08:00 ] ::1 /firstrmb/Admin/User/userList
+ERR: 无法加载控制器:User
+
+[ 2017-05-05T08:52:17+08:00 ] ::1 /firstrmb/Admin/User/userList
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'firstrmb.firstrmb_user_group' n'existe pas
+
+[ 2017-05-05T09:14:17+08:00 ] ::1 /firstrmb/index.php/Admin/Index/homeMaint/quickLinkInHome.html
+ERR: 非法操作:homeMaint
+
+[ 2017-05-05T09:25:16+08:00 ] ::1 /firstrmb/Admin/RichEdit/editRichTextInput/category/buyinfo
+ERR: 参数错误或者未定义:uid
+
+[ 2017-05-05T09:27:29+08:00 ] ::1 /firstrmb/Admin/RichEdit/editRichTextInput/category/buyinfo
+ERR: 参数错误或者未定义:uid
+
+[ 2017-05-05T09:27:30+08:00 ] ::1 /firstrmb/Admin/RichEdit/editBuyInfoInput/category/buyInfo
+ERR: 模板不存在:./Application/Admin/View/RichEdit/editBuyInfoInput.html
+
+[ 2017-05-05T09:30:14+08:00 ] ::1 /firstrmb/index.php/Admin/RichEdit/updateRichText.html
+ERR: 参数错误或者未定义:thedate
+
+[ 2017-05-05T09:32:35+08:00 ] ::1 /firstrmb/index.php/Admin/RichEdit/updateBuyInfo.html
+ERR: 非法操作:updateBuyInfo
+
+[ 2017-05-05T10:08:53+08:00 ] ::1 /firstrmb/Admin/SellMaint/sellCategoryList
+ERR: 模板不存在:./Application/Admin/View/SellMaint/sellCategoryList.html
+
+[ 2017-05-05T10:14:13+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/addSellCategoryInput
+ERR: 非法操作:addSellCategoryInput
+
+[ 2017-05-05T10:18:56+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/friendLinkList
+ERR: 非法操作:friendLinkList
+
+[ 2017-05-05T10:25:59+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/friendLinkList
+ERR: 非法操作:friendLinkList
+
+[ 2017-05-05T10:30:14+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/deleteSellCategory
+ERR: 非法操作:deleteSellCategory
+
+[ 2017-05-05T10:31:30+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/editSellCategoryInputs
+ERR: 非法操作:editSellCategoryInputs
+
+[ 2017-05-05T10:36:04+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/deleteSellCategory
+ERR: 非法操作:deleteSellCategory
+
+[ 2017-05-05T10:37:25+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/upSellCategory
+ERR: 非法操作:upSellCategory
+
+[ 2017-05-05T10:49:01+08:00 ] ::1 /firstrmb/index.php/Admin/Index/sellList/menuMaint.html
+ERR: 非法操作:sellList
+
+[ 2017-05-05T10:50:11+08:00 ] ::1 /firstrmb/Admin/SellMaint/sellItemList
+ERR: 非法操作:sellItemList
+
+[ 2017-05-05T10:50:49+08:00 ] ::1 /firstrmb/Admin/SellMaint/sellItemList
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'seq' inconnu dans order clause
+
+[ 2017-05-05T10:50:59+08:00 ] ::1 /firstrmb/Admin/SellMaint/sellItemList
+ERR: 模板不存在:./Application/Admin/View/SellMaint/sellItemList.html
+
+[ 2017-05-05T10:53:25+08:00 ] ::1 /firstrmb/Admin/SellMaint/sellItemList
+ERR: 模板不存在:./Application/Admin/View/SellMaint/sellItemList.html
+
+[ 2017-05-05T10:59:23+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/addSellItemInput
+ERR: 非法操作:addSellItemInput
+
+[ 2017-05-05T10:59:57+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/addSellItemInput
+ERR: 模板不存在:./Application/Admin/View/SellMaint/addSellItemInput.html
+

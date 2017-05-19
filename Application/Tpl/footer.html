@@ -1,0 +1,21 @@
+
+<div id="bottom">
+ <div class="w980">
+  <div class="flinks">
+
+   友情链接：
+   <volist name="friendLinks" id="vo"> <a href="{$vo.url}" target="_blank">{$vo.text}</a> </volist>
+
+  </div>
+  <div id="bottom-l">
+   <p>{$basicInfo.network_record}</p>
+   <p>{$basicInfo.copyright}</p>
+  </div>
+  <div id="bottom-r">
+   <p>地址：{$basicInfo.address} 邮政编码：{$basicInfo.postal_code}</p>
+   <p>
+    客服邮箱：<a href="mailto:{$basicInfo.email}">{$basicInfo.email}</a> 客服电话：{$basicInfo.phone}
+   </p>
+  </div>
+ </div>
+</div>

@@ -1,0 +1,45 @@
+
+<include file="./Application/Tpl/header.html" />
+
+<!-- <script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script> -->
+<!-- <script src="__PUBLIC__/js/map.js"></script> -->
+
+<body>
+ <div class="w980" id="wrap">
+
+  <div id="leftBar" class="fl">
+   <div id="item">
+    <h2>关于我们</h2>
+    <ul>
+     <li><a href="__ROOT__/Home/Aboutus/aboutus/type/corpinfo" {$corpinfoHover}>公司简介</a></li>
+     <li><a href="__ROOT__/Home/Aboutus/aboutus/type/contactUs" {$contactUsHover}>联系我们</a></li>
+    </ul>
+   </div>
+  <include file="./Application/Tpl/left-navi.html" />
+  <script type="text/javascript">
+			$(function() {
+				$("#hot ul li:first div").show();
+			})
+		</script>
+
+  <div id="main" class="fl">
+
+   <div id="position">
+    您的位置：关于我们 &gt; <span>{$pageName}</span>
+   </div>
+   <div id="content">
+    <div id="article">
+     <if condition="$corpinfoHover neq null">{$corpbrief}
+     <else/>{$contactus}
+     </if>
+    </div>
+   </div>
+  </div>
+  <div class="clear"></div>
+ </div>
+
+
+ <include file="./Application/Tpl/footer.html" />
+</body>
+
+</html>

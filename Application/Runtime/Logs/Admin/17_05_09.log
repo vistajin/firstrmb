@@ -1,0 +1,21 @@
+[ 2017-05-09T22:09:42+08:00 ] 119.137.54.183 /firstrmb/admin
+ERR: 非法操作:index
+
+[ 2017-05-09T22:10:12+08:00 ] 119.137.54.183 /firstrmb/index.php/Admin
+ERR: 非法操作:index
+
+[ 2017-05-09T22:10:22+08:00 ] 119.137.54.183 /firstrmb/admin
+ERR: 非法操作:index
+
+[ 2017-05-09T22:10:35+08:00 ] 119.137.54.183 /firstrmb/admin
+ERR: 非法操作:index
+
+[ 2017-05-09T22:11:22+08:00 ] 119.137.54.183 /firstrmb/admin
+ERR: 非法操作:index
+
+[ 2017-05-09T22:12:22+08:00 ] 119.137.54.183 /firstrmb/index.php/Admin/Index/firstrmb/Public/bui/assets/js/common/main-min.js
+ERR: 非法操作:firstrmb
+
+[ 2017-05-09T22:12:46+08:00 ] 119.137.54.183 /firstrmb/Admin
+ERR: 非法操作:index
+

@@ -1,0 +1,9 @@
+[ 2017-05-03T15:01:59+08:00 ] ::1 /firstrmb/
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'firstrmb.firstrmb_home_menu' n'existe pas
+
+[ 2017-05-03T15:08:00+08:00 ] ::1 /firstrmb/Home/AccessTrace/trace?url=%2Ffirstrmb%2Findex.php%2FHome%2FIndex
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'firstrmb.firstrmb_access_trace_counter' n'existe pas
+

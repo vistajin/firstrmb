@@ -1,0 +1,39 @@
+
+<include file="./Application/Tpl/header.html" />
+
+<body>
+ <div class="w980" id="wrap">
+  <div id="leftBar" class="fl">
+   <div id="item">
+    <h2>藏品出售目录</h2>
+    <ul>
+     <volist name="sellCategoryList" id="vo"> <if condition="$category_uid eq $vo['uid']">
+     <li><a href="__ROOT__/Home/Sell/sell/category_uid/{$vo.uid}" class='item-hover'>{$vo.text}</a></li>
+     <else />
+     <li><a href="__ROOT__/Home/Sell/sell/category_uid/{$vo.uid}">{$vo.text}</a></li>
+     </if> </volist>
+    </ul>
+   </div>
+   <include file="./Application/Tpl/left-navi.html" />
+   <script type="text/javascript">
+				$(function() {
+					$("#hot ul li:first div").show();
+				})
+			</script>
+   <div id="main" class="fl">
+    <div id="position">
+     您的位置：藏品出售目录 &gt; <span>{$pageName}</span>
+    </div>
+    <div id="content">
+     <div id="article">
+     	<h1><strong>{$record.title}</strong></h1>
+        {$record.content}
+     </div>
+     <div class="clear"></div>
+    </div>
+   </div>
+  </div>
+ </div>
+    <include file="./Application/Tpl/footer.html" />
+</body>
+</html>

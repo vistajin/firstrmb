@@ -1,0 +1,141 @@
+[ 2017-05-08T08:33:38+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/editSellItemInput
+ERR: 非法操作:editSellItemInput
+
+[ 2017-05-08T08:34:17+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/upSellItem
+ERR: 非法操作:upSellItem
+
+[ 2017-05-08T08:36:09+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/deleteSellItem
+ERR: 非法操作:deleteSellItem
+
+[ 2017-05-08T08:36:37+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/editSellItemInput
+ERR: 模板不存在:./Application/Admin/View/SellMaint/editSellItemInput.html
+
+[ 2017-05-08T08:41:54+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/editSellItemInput
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '%d ) LIMIT 1' à la ligne 1
+
+[ 2017-05-08T08:43:07+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/editSellItemInput
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '%d ) LIMIT 1' à la ligne 1
+
+[ 2017-05-08T10:47:38+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/downSellItem
+ERR: 非法操作:downSellItem
+
+[ 2017-05-08T10:59:18+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/downSellItem
+ERR: Think\Controller:moveSellCItemOrder方法不存在！
+
+[ 2017-05-08T14:30:29+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList2
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:30:31+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList1
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:30:31+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList5
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:30:32+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList4
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:30:32+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList7
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:30:36+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList1
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:31:10+08:00 ] ::1 /firstrmb/index.php/Admin/Index/sellList/sellItem1.html
+ERR: 非法操作:sellList
+
+[ 2017-05-08T14:32:14+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList2
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:32:27+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList2
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:33:21+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList2
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:33:44+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/2
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:33:45+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/1
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:33:57+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/1
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:34:40+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/5
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:34:43+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/2
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:34:44+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/1
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:34:45+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/5
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:34:45+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/5
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:34:46+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/4
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:34:46+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/6
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:34:47+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/7
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:34:47+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/6
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:34:47+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/5
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:34:49+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/2
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:34:50+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/1
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:34:50+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/4
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:34:50+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/6
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:34:54+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/7
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:35:01+08:00 ] ::1 /firstrmb/index.php/Admin/Index/__ROOT__/Admin/SellMaint/sellItemList/category_uid/7
+ERR: 非法操作:__ROOT__
+
+[ 2017-05-08T14:46:35+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/downSellItem
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'seq = 2 ) LIMIT 1' à la ligne 1
+
+[ 2017-05-08T14:50:11+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/downSellItem
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'seq = 2 ) LIMIT 1' à la ligne 1
+
+[ 2017-05-08T15:04:53+08:00 ] ::1 /firstrmb/index.php/Admin/Index/sellList/sellItemMaint.html
+ERR: 非法操作:sellList
+
+[ 2017-05-08T15:16:34+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/deleteSellCategory
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'category_uid' inconnu dans where clause
+
+[ 2017-05-08T21:08:12+08:00 ] ::1 /firstrmb/admin
+ERR: 非法操作:index
+
+[ 2017-05-08T21:08:20+08:00 ] ::1 /firstrmb/admin
+ERR: 非法操作:index
+
+[ 2017-05-08T21:08:45+08:00 ] ::1 /firstrmb/admin/index
+ERR: 非法操作:index
+
+[ 2017-05-08T21:28:06+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/addSellItem
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Le champ 'isRecommend' ne peut être vide (null)
+
+[ 2017-05-08T21:29:53+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/addSellItem
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Le champ 'isRecommend' ne peut être vide (null)
+
+[ 2017-05-08T21:30:03+08:00 ] ::1 /firstrmb/index.php/Admin/SellMaint/addSellItem
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Le champ 'isShow' ne peut être vide (null)
+

@@ -1,0 +1,55 @@
+
+<include file="./Application/Tpl/header.html" />
+
+<!-- <script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script> -->
+<!-- <script src="__PUBLIC__/js/map.js"></script> -->
+
+<body>
+ <div class="w980" id="wrap">
+
+  <div id="leftBar" class="fl">
+   <div id="item">
+    <h2>{$pageName}</h2>
+    <if condition="$activityHover neq null">
+         <ul> 
+          <li><a href="__ROOT__/Home/Activity/activity" {$activityItemHover}>公司动态</a></li> 
+          <li><a href="__ROOT__/Home/Activity/activity/category/industryNews" {$industryNewsItemHover}>行业动态</a></li> 
+         </ul>
+    </if>
+   </div>
+   <include file="./Application/Tpl/left-navi.html" />
+   <script type="text/javascript">
+				$(function() {
+					$("#hot ul li:first div").show();
+				})
+			</script>
+
+   <div id="main" class="fl">
+
+    <div id="position">
+     您的位置：{$pageName} {$pageName2}
+    </div>
+    <div id="content">
+     <div id="newsList">
+      <ul>
+       <volist name="activity" id="vo">
+       <li><span class="fr">{$vo.thedate}</span> <a class="fl" target="_blank" href="__ROOT__/Home/Activity/detail/uid/{$vo.uid}"
+        title="{$vo.title}">{$vo.title}</a></li>
+       </volist>
+      </ul>
+     </div>
+     <div class="container" align="right">
+      <ul class="pagination nomargin">{$page}
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="clear"></div>
+  </div>
+
+
+  <include file="./Application/Tpl/footer.html" />
+</body>
+
+</html>

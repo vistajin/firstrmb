@@ -1,0 +1,18 @@
+<div id="hot">
+ <h2>推荐藏品</h2>
+ <ul>
+  <volist name="recommendSellItems" id="vo">
+  <li title="{$vo.title}">{$key+1}、{$vo.titleShort}
+   <div>
+    <a href="__ROOT__/Home/Sell/detail/uid/{$vo.uid}" title="{$vo.title}"> <img src="__ROOT__/Uploads/{$vo.img}" width="160" height="90"
+     alt="" /></a>
+   </div>
+  </li>
+  </volist>
+ </ul>
+</div>
+<div id="contactus">
+ <h2>联系我们</h2>
+ {$contactusSimple}
+</div>
+</div>

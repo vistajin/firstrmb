@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<include file="./Application/Tpl/header-admin.html" />
+</head>
+
+<body>
+	<div class="container nomargin">
+		<div class="page-header">
+			<h3>编辑出售目录</h3>
+		</div>
+		<form action="{:U('Admin/SellMaint/updateSellCategory')}" method="post">
+			<input type="hidden" name="uid" value="{$record.uid}">
+			<div class="form-group">
+				<label for="text">目录名称</label>
+				<input type="text" class="form-control" name="text" id="text" value="{$record.text}" required>
+			</div>
+			<div align="center">
+				<button class="btn btn-success" type="submit" id="save" value="submit">提交</button>
+				<button type="button" class="btn btn-default" id="backbtn">取消</button>
+				<br/><br/>
+			</div>
+		</form>
+	</div>
+
+	<form id="form" action="__CONTROLLER__/sellCategoryList" method="post"></form>
+</body>
+<script>
+$("#backbtn").click(function() {
+    $("#form").submit();
+});
+</script>
+</html>
